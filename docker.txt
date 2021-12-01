@@ -14,6 +14,6 @@
     (exec -it) execute a command (in the case, "bash") in the container name (nginx)
 
 *docker build -t thiago/nginx-hello_world:latest .
-    builds an image with the tag (-t) name "thiago / nginx-hello_world". ":latest" is the tag representing the version of the image (can be 1.0, 2.3, etc.). O "."
+    builds an image with the repository (-t) name "thiago / nginx-hello_world". ":latest" is the tag representing the version of the image (can be 1.0, 2.3, etc.). O "."
     represent the Dockerfile directory (can be "/docker /", etc);
 
