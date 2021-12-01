@@ -1,9 +1,14 @@
-*docker ps:    list active containers;
+*docker ps
+    list active containers;
 
-*docker ps -a:     list all containers;
+*docker ps -a
+    list all containers;
 
-*docker run --rm --name=nginx -p 8080:80 nginx:    creates a container and (--rm) removes it after exiting, (--name = nginx) names it and (-p 8080: 80) assigns local port 8080 to container port 80;
+*docker run --rm --name=nginx -p 8080:80 nginx
+    creates a container and (--rm) removes it after exiting, (--name = nginx) names it and (-p 8080: 80) assigns local port 8080 to container port 80;
 
-*docker run --rm --name=nginx -p 8080:80 -v $(pwd):/usr/share/nginx/html nginx:    ^^ and shares / connects the current folder on my computer to the "html" folder inside the container. This is "Volume";
+*docker run --rm --name=nginx -p 8080:80 -v $(pwd):/usr/share/nginx/html nginx
+    ^^ and shares / connects the current folder on my computer to the "html" folder inside the container. This is "Volume";
 
-*docker exec -it nginx bash:    (exec -it) execute a command (in the case, "bash") in the container name (nginx)
+*docker exec -it nginx bash
+    (exec -it) execute a command (in the case, "bash") in the container name (nginx)
