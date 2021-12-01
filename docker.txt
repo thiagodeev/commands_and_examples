@@ -6,4 +6,4 @@
 
 *docker run --rm --name=nginx -p 8080:80 -v $(pwd):/usr/share/nginx/html nginx:    ^^ and shares / connects the current folder on my computer to the "html" folder inside the container. This is "Volume";
 
-*docker exec -it nginx bash:    
+*docker exec -it nginx bash:    (exec -it) execute a command (in the case, "bash") in the container name (nginx)
