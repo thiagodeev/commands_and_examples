@@ -23,3 +23,6 @@
     rename the tag
 *docker rmi  UglyOldTag
     remove the old tag name (it was always the same image, just different tags)
+
+*docker rm $(docker ps --filter status=exited -q)
+    delete all inactive containers
