@@ -30,3 +30,12 @@
 
 *git log --pretty=oneline --graph
 	shows lasts commits with graphs adn inline description
+
+*git stash
+	makes a "backup" of your modifications and stores it in a "temporary branch"
+
+*git stash apply
+	brings back your changes
+	
+*git reset HEAD~1
+	resets your last commit
