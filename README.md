@@ -1,5 +1,5 @@
 # common-commands
-Common commands of my day-to-day
+Common commands of my routine
 
 # WLS2
 wsl --list --verbose
