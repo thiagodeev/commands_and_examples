@@ -1,0 +1,32 @@
+*git status
+	show the status of the repository
+	
+*git add .
+	selects all files and moves them to the staging area, marking them for inclusion in the next commit
+	
+*git commit -m "<description>"
+	commit with a short description message
+	
+*git push <remote> <branch>
+	send your branch to remote repositori (ex: git push origin feature/title)
+
+*git pull <remote> <branch>
+	downloads updates from the remote repository (ex: git pull origin feature/title)
+
+*git checkout <branch>
+	switches to other branch (ex: git checkout main)
+
+*git checkout -b <branch>
+	creates a new branch and switch to it
+
+*git branch
+	lists all local branches
+
+*git branch -a
+	lists all branches, including remote branches
+
+*git log
+	shows lasts commits
+
+*git log --pretty=oneline --graph
+	shows lasts commits with graphs adn inline description
