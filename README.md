@@ -1,6 +1,2 @@
-# common-commands
-Common commands of my routine
-
-# WLS2
-wsl --list --verbose
-wsl --shutdown
+# commands_and_examples
+commands and examples of my routine
