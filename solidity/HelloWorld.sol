@@ -3,6 +3,8 @@
 
 pragma solidity ^0.8;  //solidity version
 
+import "./Ownable.sol";
+
 //the SafeMath library is no longer needed to 0.8 Solidity version onwards due the variables no longer overflow/underflow 
 library SafeMath {
   //pure Functions: does not change or query any value on Blockchain, it's free of fees
@@ -35,28 +37,6 @@ library SafeMath {
     uint c = a / b;
     
     return c;
-  }
-}
-
-contract Ownable {
-  address public owner;
-
-  //creates an event, labels it and sets the return type
-  event OwnershipTransferred(address newOwner);
-
-  //executed only once, at the contract deploy
-  constructor(){
-    owner = msg.sender;
-  }
-
-  modifier onlyOwner(){
-    require(msg.sender == owner, "You are not the owner!");
-    _; //lets the function continue
-  }
-
-  function transferOwnership(address payable newOwner) onlyOwner public{
-    owner = newOwner;  
-    emit OwnershipTransferred(owner); //emits the event passing the variable as a parameter
   }
 }
 
