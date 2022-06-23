@@ -123,17 +123,10 @@ contract HelloWorld is Ownable{
   }
 
   function getInteraction(uint interactionIndex) view public returns(uint timeStamp, string memory typeOfInteraction){
-    getInteractionTimestamp(interactionIndex);
-    getInteractionTypeOf(interactionIndex);
-    return (getInteractionTimestamp(interactionIndex), getInteractionTypeOf(interactionIndex));
-  }
-
-  function getInteractionTimestamp(uint interactionIndex) view internal returns(uint){
-    return user[msg.sender].interaction[interactionIndex].timestamp;
-  }
-
-  function getInteractionTypeOf(uint interactionIndex) view internal returns(string memory){
-    return user[msg.sender].interaction[interactionIndex].typeOfInteraction;
+    return (
+      user[msg.sender].interaction[interactionIndex].timestamp, 
+      user[msg.sender].interaction[interactionIndex].typeOfInteraction
+    );
   }
 
   function sendETH(address payable targetAddress) public payable{
