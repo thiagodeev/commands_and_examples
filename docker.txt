@@ -28,3 +28,4 @@
     delete all inactive containers
 
 * docker ps --format "table {{.ID}}\t{{.Labels}}\t{{Ports}}"
+* for i in `docker ps -q`; do docker exec -it $i bash -c 'cd /var/www/html && git pull'; done
